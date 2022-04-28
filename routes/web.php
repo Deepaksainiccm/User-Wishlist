@@ -8,7 +8,6 @@ use App\Http\Controllers\MobileController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
-// use Auth;
 
 /*
 |--------------------------------------------------------------------------
