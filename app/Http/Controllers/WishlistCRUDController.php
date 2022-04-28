@@ -59,8 +59,6 @@ class WishlistCRUDController extends Controller
             'user_id' => 'required',
         ]);
 
-       
-        
         $wishlists = Wishlists::find($id);
         $wishlists->wishlist_name = request('wishlist_name');
         $wishlists->save();

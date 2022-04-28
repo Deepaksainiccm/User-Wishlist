@@ -45,15 +45,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/wishlist','WishlistCRUDController@index')->name('home');
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-// Route::get('/wishlist', function () {
-//     return view('wishlist.index');
-// })->middleware(['auth'])->name('wishlist');
+
 
 
 require __DIR__.'/auth.php';

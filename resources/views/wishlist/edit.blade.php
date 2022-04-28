@@ -32,25 +32,16 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>wishlist Name:</strong>
-                        <input type="text" name="wishlist_name" value="{{ $wishlists->wishlist_name }}" class="form-control"
-                            placeholder="wishlist name">
+                        <input type="text" name="wishlist_name" value="{{ $wishlists->wishlist_name }}"
+                            class="form-control" placeholder="wishlist name">
                         @error('name')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                         @enderror
                     </div>
                 </div>
-                
-                {{-- <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>User Id:</strong>
-                        <input type="text" name="user_id" value="{{ $wishlists->user_id }}" class="form-control" placeholder="user id">
-                        
-                        @error('user_id')
-                            <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
-                        @enderror
-                    </div>
-                </div> --}}
+
                 <button type="submit" class="btn btn-primary ml-3">Submit</button>
+
             </div>
         </form>
     </div>
